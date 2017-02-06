@@ -11,7 +11,7 @@ namespace CurryKatsuCerritos.Controllers.Web
     {
         public IActionResult Index()
         {
-            ViewBag.Title = "BOOM!";
+            ViewBag.Title = "Home";
             return View();
         }
     }

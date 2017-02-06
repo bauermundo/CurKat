@@ -6,42 +6,44 @@
     <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <title>Curry Katsu - @ViewBag.Title</title>
-    <style>
+    @*<style>
         .navbar .navbar-nav {
             display: inline-block;
             float: none;
         }
 
-        .navbar_item {
-            height:70px;
-            line-height:70px;
-        }
-
         a.navbar_item {
-            padding-top:20px;
+            padding-top: 20px;
         }
 
         .navbar .navbar-collapse {
             text-align: center;
         }
-    </style>
+    </style>*@
 </head>
 <body>
-    <div class="collapse navbar-collapse" style="text-align:center">
-        <nav class="navbar navbar-default">
-            <ul class="nav navbar-nav">
-                <li><a href="#" class="navbar_item">Menu</a> </li>
-                <li><a href="#" class="navbar_item">Map</a></li>
-                <li><a href="#" class="navbar_item">Media</a></li>
-                <li><img src="~/img/logo.png"  class="navbar_item"/></li>
-                <li><a href="#" class="navbar_item">Menu</a> </li>
-                <li><a href="#" class="navbar_item">Map</a></li>
-                <li><a href="#" class="navbar_item">Media</a></li>
-            </ul>
-        </nav>
+    <div class="row">
+        <div class="col-md-2 col-md-offset-2">
+            <img style="height:70px;" src="~/img/logo.png" class="navbar_item" />
+        </div>
+        <div class="col-md-8">
+            <div class="collapse navbar-collapse" style="text-align:center">
+                <nav class="navbar navbar-default">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" class="navbar_item">Menu</a> </li>
+                        <li><a href="#" class="navbar_item">Map</a></li>
+                        <li><a href="#" class="navbar_item">Media</a></li>
+                        <li><a href="#" class="navbar_item">Menu</a> </li>
+                        <li><a href="#" class="navbar_item">Map</a></li>
+                        <li><a href="#" class="navbar_item">Media</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
     <div>
         @RenderBody()
     </div>
+    @RenderSection("scripts", false)
 </body>
 </html>

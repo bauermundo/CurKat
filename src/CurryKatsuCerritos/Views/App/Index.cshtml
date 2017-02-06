@@ -3,41 +3,61 @@
 }
 <style>
     .menu_item {
-        margin-bottom:40px;
+        margin-bottom: 40px;
+    }
+
+    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        line-height: 1;
+        width: 100%;     
     }
 </style>
 <script>
     $(function () {
         $('.carousel').carousel({
-            interval: 2000
+            interval: 6000
         });
     });
 </script>
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-8 col-md-offset-2">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
             </ol>
 
             <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner" role="listbox" style="height:250px;">
                 <div class="item active">
-                    <img src="..." alt="...">
+                    <img src="~/img/currykat1.jpg" />
                     <div class="carousel-caption">
                         ...
                     </div>
                 </div>
                 <div class="item">
-                    <img src="..." alt="...">
+                    <img src="~/img/currykat2.jpg" />
                     <div class="carousel-caption">
                         ...
                     </div>
                 </div>
-                ...
+                <div class="item">
+                    <img src="~/img/currykat3.jpg" />
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/img/currykat4.jpg" />
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
             </div>
 
             <!-- Controls -->
@@ -57,35 +77,24 @@
         <ul class="list-unstyled">
             <li class="menu_item">
                 <div>
-                    <h4><span class="item_name pull-left">Voluptate cillum fugiat.</span><span class="price pull-right">$50</span></h4>
+                    <h4><span class="item_name pull-left">Chicken Katsu</span><span class="price pull-right">$10.50</span></h4>
                 </div>
-                <p style="clear:both;">
-                    <small>tomato, mushrooms, onions.</small>
-                </p>
+                <div style="clear:both;"></div>
             </li>
             <li class="menu_item">
                 <div>
-                    <h4><span class="item_name pull-left">Voluptate cillum fugiat.</span><span class="price pull-right">$50</span></h4>
-                </div>
-                <p style="clear:both;">
-                    <small>tomato, mushrooms, onions.</small>
-                </p>
+                    <h4><span class="item_name pull-left">Pork Katsu</span><span class="price pull-right">$10.95</span></h4>
+                </div><div style="clear:both;"></div>
             </li>
             <li class="menu_item">
                 <div>
-                    <h4><span class="item_name pull-left">Voluptate cillum fugiat.</span><span class="price pull-right">$50</span></h4>
-                </div>
-                <p style="clear:both;">
-                    <small>tomato, mushrooms, onions.</small>
-                </p>
+                    <h4><span class="item_name pull-left">Menchi Katsu</span><span class="price pull-right">$10.95</span></h4>
+                </div><div style="clear:both;"></div>
             </li>
             <li class="menu_item">
                 <div>
-                    <h4><span class="item_name pull-left">Voluptate cillum fugiat.</span><span class="price pull-right">$50</span></h4>
-                </div>
-                <p style="clear:both;">
-                    <small>tomato, mushrooms, onions.</small>
-                </p>
+                    <h4><span class="item_name pull-left">Eggplant Katsu</span><span class="price pull-right">$9.50</span></h4>
+                </div><div style="clear:both;"></div>
             </li>
         </ul>
     </div>
@@ -93,39 +102,28 @@
         <ul class="list-unstyled">
             <li class="menu_item">
                 <div>
-                    <h4><span class="item_name pull-left">Voluptate cillum fugiat.</span><span class="price pull-right">$50</span></h4>
+                    <h4><span class="item_name pull-left">Fried Shrimp</span><span class="price pull-right">$11.50</span></h4>
                 </div>
-                <p style="clear:both;">
-                    <small>tomato, mushrooms, onions.</small>
-                </p>
+                <div style="clear:both;"></div>
             </li>
             <li class="menu_item">
                 <div>
-                    <h4><span class="item_name pull-left">Voluptate cillum fugiat.</span><span class="price pull-right">$50</span></h4>
-                </div>
-                <p style="clear:both;">
-                    <small>tomato, mushrooms, onions.</small>
-                </p>
+                    <h4><span class="item_name pull-left">Spam Katsu &Aacute; Crispy Fried Egg</span><span class="price pull-right">$9.95</span></h4>
+                </div><div style="clear:both;"></div>
             </li>
             <li class="menu_item">
                 <div>
-                    <h4><span class="item_name pull-left">Voluptate cillum fugiat.</span><span class="price pull-right">$50</span></h4>
-                </div>
-                <p style="clear:both;">
-                    <small>tomato, mushrooms, onions.</small>
-                </p>
+                    <h4><span class="item_name pull-left">Stewed Vegetable Curry</span><span class="price pull-right">$9.95</span></h4>
+                </div><div style="clear:both;"></div>
             </li>
             <li class="menu_item">
                 <div>
-                    <h4><span class="item_name pull-left">Voluptate cillum fugiat.</span><span class="price pull-right">$50</span></h4>
-                </div>
-                <p style="clear:both;">
-                    <small>tomato, mushrooms, onions.</small>
-                </p>
+                    <h4><span class="item_name pull-left">Eggplant Katsu</span><span class="price pull-right">$9.50</span></h4>
+                </div><div style="clear:both;"></div>
             </li>
         </ul>
     </div>
 </div>
 @section scripts{
-
+    <script src="~/lib/bootstrap/js/carousel.js"></script>
 }

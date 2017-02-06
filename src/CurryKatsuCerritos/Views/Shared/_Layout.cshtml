@@ -3,8 +3,9 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
-    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link href="~/lib/bootswatch/yeti/bootstrap.min.css" rel="stylesheet" />
     <title>Curry Katsu - @ViewBag.Title</title>
     @*<style>
         .navbar .navbar-nav {
@@ -27,15 +28,12 @@
             <img style="height:70px;" src="~/img/logo.png" class="navbar_item" />
         </div>
         <div class="col-md-8">
-            <div class="collapse navbar-collapse" style="text-align:center">
+            <div class="collapse navbar-collapse" style="text-align:center;height:70px;">
                 <nav class="navbar navbar-default">
                     <ul class="nav navbar-nav">
-                        <li><a href="#" class="navbar_item">Menu</a> </li>
-                        <li><a href="#" class="navbar_item">Map</a></li>
-                        <li><a href="#" class="navbar_item">Media</a></li>
-                        <li><a href="#" class="navbar_item">Menu</a> </li>
-                        <li><a href="#" class="navbar_item">Map</a></li>
-                        <li><a href="#" class="navbar_item">Media</a></li>
+                        <li><a href="#" class="navbar_item">Home</a> </li>
+                        <li><a href="#" class="navbar_item">Menu</a></li>
+                        <li><a href="#" class="navbar_item">About Us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -44,6 +42,7 @@
     <div>
         @RenderBody()
     </div>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     @RenderSection("scripts", false)
 </body>
 </html>
